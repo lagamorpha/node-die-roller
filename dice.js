@@ -1,4 +1,4 @@
-const { roller } = require('./roller');
+// const { roller } = require('./roller');
 const { d4 } = require('./diceForms/d4');
 const { d6 } = require('./diceForms/d6');
 const { d8 } = require('./diceForms/d8');
