@@ -1,8 +1,21 @@
 const { roller } = require('./roller');
-const { d4, d6 } = require('./diceForms/d4')
+const { d4 } = require('./diceForms/d4');
+const { d6 } = require('./diceForms/d6');
+const { d8 } = require('./diceForms/d8');
+const { d10 } = require('./diceForms/d10');
+const { d12 } = require('./diceForms/d12');
+const { d20 } = require('./diceForms/d20');
+const { d30 } = require('./diceForms/d30');
+const { d100 } = require('./diceForms/d100');
 
-console.log(d4);
-console.log(d6);
+console.log(`roll a d4: ${d4}`);
+console.log(`roll a d6: ${d6}`);
+console.log(`roll a d8: ${d8}`);
+console.log(`roll a d10: ${d10}`);
+console.log(`roll a d12: ${d12}`);
+console.log(`roll a d20: ${d20}`);
+console.log(`roll a d30: ${d30}`);
+console.log(`roll a d100: ${d100}`);
 
 // variable declarations
 // const rolls = [];
