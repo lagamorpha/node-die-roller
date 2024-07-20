@@ -1,6 +1,11 @@
 // initialize express
 const express = require('express');
 const app = express();
+const path = require('path');
+
+// set to ejs, fix ejs pathing
+app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, '/views'));
 
 // home route
 app.get('/', (req, res) => {
