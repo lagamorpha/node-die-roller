@@ -2,7 +2,7 @@
 const express = require('express');
 const app = express();
 const path = require('path');
-const d4 = require('./dice-mechanics/diceForms/d4');
+const { d4 } = require('./dice-mechanics/diceForms/d4');
 
 // set to ejs, fix ejs pathing
 app.set('view engine', 'ejs');
@@ -10,12 +10,12 @@ app.set('views', path.join(__dirname, '/views'));
 
 // home route
 app.get('/', (req, res) => {
+    console.log("Login to home page");
     res.render('home.ejs');
 });
 
 app.get('/dieRoller', (req, res) => {
-    const { d4 } = d4;
-    res.render('diRoller.ejs', { d4 });
+    res.render('dieRoller', { d4 });
 });
 
 // Default route
