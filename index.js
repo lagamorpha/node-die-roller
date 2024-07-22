@@ -21,6 +21,7 @@ app.get('/', (req, res) => {
 
 // die roller route
 app.get('/dieRoller', (req, res) => {
+    console.log("Login to die roller page");
     function d4_Click() {
         alert("test");
     }
